@@ -60,7 +60,7 @@ const niceOrNaughty2 = (str) => {
     return (charBetween(str) && doublePair(str)) ? true : false;
 }
 const answer2 = input.map(val => niceOrNaughty2(val)).reduce((acc,val) => acc + val, 0);
-console.log(answer2);
 
-// console.log(doublePair('asdfsddsd'))
+console.log(answer1);
+console.log(answer2);
 console.timeEnd();
