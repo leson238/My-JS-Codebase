@@ -1,0 +1,14 @@
+img {
+    width: 160px;
+    float: left!important;
+    border-radius: 50%;
+    margin-right: 16px!important;
+    border-style: solid;
+    border-color: gray;
+}
+.tag {
+    display: inline-block;
+    padding: 10px;
+    border: solid 5px white;
+    background-color: gray;
+}
