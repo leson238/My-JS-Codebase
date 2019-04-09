@@ -9,10 +9,10 @@ let tests = fs.readFileSync("./tests.csv", "utf8");
 
 //parsing into array of objects
 const parse = (data) => d3.csvParse(data);
-courses = parse(courses).slice(0,courses.length-2);
-students = parse(students).slice(0,students.length-2);
-marks = parse(marks).slice(0,marks.length-2);
-tests = parse(tests).slice(0,tests.length-2);
+courses = parse(courses)
+students = parse(students)
+marks = parse(marks)
+tests = parse(tests)
 
 //Ultility functions
 const lookUpID = (id, table) => {
@@ -87,7 +87,7 @@ let result = reportCardID.map((rec) => {
             return {
                 course: group.key,
                 teacher: lookUpName(group.key,courses).teacher,
-                finalGrade: group.value.toFixed(2) + '%',
+                finalGrade: group.value <= 100 ? group.value.toFixed(2) + '%' : "100%", //In case teacher made up bonus test for students
             }
         })
     }

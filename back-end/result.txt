@@ -9,7 +9,7 @@ Total Average: 88.97%
 
        Course: History, Teacher:  Mrs. P
 
-        Final Grade:    102.62%
+        Final Grade:    There is a problem with teacher's input
 
 
        Course: Math, Teacher:  Mrs. C
@@ -30,7 +30,7 @@ Total Average: 71.05%
 
        Course: Math, Teacher:  Mrs. C
 
-        Final Grade:    117.44%
+        Final Grade:    There is a problem with teacher's input
 
 
        Course: History, Teacher:  Mrs. P
@@ -46,7 +46,7 @@ Total Average: 79.38%
 
        Course: Biology, Teacher: Mr. D
 
-        Final Grade:    112.14%
+        Final Grade:    There is a problem with teacher's input
 
 
        Course: History, Teacher:  Mrs. P
