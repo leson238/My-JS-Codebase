@@ -5,7 +5,7 @@ const geocode = require("../utils/geocode");
 const forecast = require("../utils/forecast");
 
 const app = express();
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 3000;
 
 //Define path for express config
 const viewsPath = path.join(__dirname, "../templates/views");
@@ -57,10 +57,10 @@ app.get("/weather", (req, res) => {
             if (err) {
                 return res.send({ err });
             }
-            const { temperature, precipProbability } = forecast;
+            const { temperature, precipProbability, dewPoint } = forecast;
             res.send({
                 location,
-                forecast: `The current temperature is ${temperature} Celsius degrees. The rain chance is ${precipProbability}%`,
+                forecast: `The current temperature is ${temperature} Celsius degrees. The rain chance is ${precipProbability}%. The dew point is ${dewPoint}`,
                 address
             });
         });

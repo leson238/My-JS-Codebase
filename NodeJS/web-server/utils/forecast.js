@@ -13,10 +13,15 @@ const forecast = (long, lat, callback) => {
             } else if (body.error) {
                 callback(body.error);
             } else {
-                const { temperature, precipProbability } = body.currently;
+                const {
+                    temperature,
+                    precipProbability,
+                    dewPoint
+                } = body.currently;
                 callback(undefined, {
-                    temperature: temperature,
-                    precipProbability: precipProbability
+                    temperature,
+                    precipProbability,
+                    dewPoint
                 });
             }
         }
